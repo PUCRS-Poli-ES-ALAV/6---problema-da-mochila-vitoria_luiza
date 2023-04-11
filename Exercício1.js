@@ -23,9 +23,6 @@ function fiboRec (n) {
     }
 }
 
-console.log("fiboRecIterations: ", fiboRecIterations);
-console.log("fiboRecInstructions: ", fiboRecInstructions);
-
 let fiboIterations = 0;
 let fiboInstructions = 0;
 
@@ -50,9 +47,6 @@ function fibo (n) {
 
     return f[n];
 }
-
-console.log("fiboIterations: ", fiboIterations);
-console.log("fiboInstructions: ", fiboInstructions);
 
 let memoizedFiboIterations = 0;
 let memoizedFiboInstructions = 0;
@@ -106,44 +100,77 @@ function lookupFibo(f , n) {
     return f[n];
 }
 
+console.log("---4---");
+console.log("fiboRec", fiboRec(4));
+console.log("fiboRecIterations: ", fiboRecIterations);
+console.log("fiboRecInstructions: ", fiboRecInstructions);
+console.log("fibo", fibo(4));
+console.log("fiboIterations: ", fiboIterations);
+console.log("fiboInstructions: ", fiboInstructions);
+var f = [];
+console.log("memoizedFibo", memoizedFibo(f, 4));
 console.log("memoizedFiboIterations: ", memoizedFiboIterations);
 console.log("memoizedFiboInstructions: ", memoizedFiboInstructions);
 
-console.log("---4---");
-console.log("fiboRec", fiboRec(4));
-console.log("fibo", fibo(4));
-var f = [];
-console.log("memoizedFibo", memoizedFibo(f, 4));
-
 console.log("---8---");
 console.log("fiboRec", fiboRec(8));
+console.log("fiboRecIterations: ", fiboRecIterations);
+console.log("fiboRecInstructions: ", fiboRecInstructions);
 console.log("fibo", fibo(8));
+console.log("fiboIterations: ", fiboIterations);
+console.log("fiboInstructions: ", fiboInstructions);
 var f = [];
 console.log("memoizedFibo", memoizedFibo(f, 8));
+console.log("memoizedFiboIterations: ", memoizedFiboIterations);
+console.log("memoizedFiboInstructions: ", memoizedFiboInstructions);
 
 console.log("---16---");
 console.log("fiboRec", fiboRec(16));
+console.log("fiboRecIterations: ", fiboRecIterations);
+console.log("fiboRecInstructions: ", fiboRecInstructions);
 console.log("fibo", fibo(16));
+console.log("fiboIterations: ", fiboIterations);
+console.log("fiboInstructions: ", fiboInstructions);
 var f = [];
 console.log("memoizedFibo", memoizedFibo(f, 16));
+console.log("memoizedFiboIterations: ", memoizedFiboIterations);
+console.log("memoizedFiboInstructions: ", memoizedFiboInstructions);
 
 console.log("---32---");
 console.log("fiboRec", fiboRec(32));
+console.log("fiboRecIterations: ", fiboRecIterations);
+console.log("fiboRecInstructions: ", fiboRecInstructions);
 console.log("fibo", fibo(32));
+console.log("fiboIterations: ", fiboIterations);
+console.log("fiboInstructions: ", fiboInstructions);
 var f = [];
 console.log("memoizedFibo", memoizedFibo(f, 32));
+console.log("memoizedFiboIterations: ", memoizedFiboIterations);
+console.log("memoizedFiboInstructions: ", memoizedFiboInstructions);
 
 console.log("---128---");
 console.log("fibo", fibo(128));
+console.log("fiboIterations: ", fiboIterations);
+console.log("fiboInstructions: ", fiboInstructions);
 var f = [];
 console.log("memoizedFibo", memoizedFibo(f, 128));
+console.log("memoizedFiboIterations: ", memoizedFiboIterations);
+console.log("memoizedFiboInstructions: ", memoizedFiboInstructions);
 
 console.log("---1000---");
 console.log("fibo", fibo(1000));
+console.log("fiboIterations: ", fiboIterations);
+console.log("fiboInstructions: ", fiboInstructions);
 var f = [];
 console.log("memoizedFibo", memoizedFibo(f, 1000));
+console.log("memoizedFiboIterations: ", memoizedFiboIterations);
+console.log("memoizedFiboInstructions: ", memoizedFiboInstructions);
 
 console.log("---10000---");
 console.log("fibo", fibo(10000));
+console.log("fiboIterations: ", fiboIterations);
+console.log("fiboInstructions: ", fiboInstructions);
 var f = [];
 console.log("memoizedFibo", memoizedFibo(f, 10000));
+console.log("memoizedFiboIterations: ", memoizedFiboIterations);
+console.log("memoizedFiboInstructions: ", memoizedFiboInstructions);
