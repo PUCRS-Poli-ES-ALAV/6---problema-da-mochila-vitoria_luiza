@@ -1,11 +1,11 @@
 function backpack(capacity, weights, values) {
-    let iteracoes = 0;
+    let iterations = 0;
     const n = weights.length;
     let max = -Infinity;
     let bestSubset = [];
   
     function generateSubsets(index, subset) {
-        iteracoes++;
+        iterations++;
 
       if (index === n) {
         let sum = subset.reduce((total, index) => total + values[index], 0);
@@ -24,11 +24,10 @@ function backpack(capacity, weights, values) {
   
     generateSubsets(0, []);
   
-    return {bestSubset: bestSubset.map(index => index + 1), iteracoes: iteracoes};
+    return {bestSubset: bestSubset.map(index => index + 1), iterations: iterations};
 }
 
 console.log("---PROBLEMA DA MOCHILA : VITORIA E LUIZA---");
-
 console.log("caso de teste 1:");
 let capacity1 = 165;
 let weights1 = [23, 31, 29, 44, 53, 38, 63, 85, 89, 82];

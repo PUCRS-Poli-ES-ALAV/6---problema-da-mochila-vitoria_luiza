@@ -37,7 +37,6 @@ function backpackDP(capacity, weights, values) {
   }
 
   console.log("---PROBLEMA DA MOCHILA : PROGRAMACAO DINAMICA---");
-
   console.log("caso de teste 1:");
   let capacity1 = 165;
   let weights1 = [23, 31, 29, 44, 53, 38, 63, 85, 89, 82];
